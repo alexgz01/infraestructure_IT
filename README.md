@@ -39,25 +39,25 @@ Contiene la ruta al repositorio.
 
 ```shell
 $ git clone 'https://github.com/alexgz01/infraestructure_IT.git'
-
+```
 
 2. Nos dirigimos a la carpeta donde se sitúa el Dockerfile:
 
 ```shell
 $ cd .\infraestructure_IT\Docker\
-
+```
 
 3. Creamos la imagen mediante el Dockerfile:
 
 ```shell
 $ docker build -t neo4j-image .
-
+```
 
 4. Levantamos un contenedor con la imagen:
 
 ```shell
 $ docker run -d -p 7474:7474 -p 7687:7687 --name neo4j-container neo4j-image
-
+```
 
 -----------------------------------------------------------------------
 
